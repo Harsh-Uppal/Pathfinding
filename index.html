@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A* Pathfinding</title>
+    <script src="./util.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="titlebar">
+        <div class="header">A* Pathfinding</div>
+        <div class="cells">
+            <button id="cell-0" name="player">
+                <label for="cell-0">Player</label>
+                <div class="cell"></div>
+            </button>
+            <button id="cell-1" name="wall">
+                <label for="cell-1">Wall</label>
+                <div class="cell"></div>
+            </button>
+            <button id="cell-2" name="target">
+                <label for="cell-2">Target</label>
+                <div class="cell"></div>
+            </button>
+            <button id="cell-3" name="empty">
+                <label for="cell-3">Clear</label>
+                <img src="clear.svg" alt="clear" class="cell">
+            </button>
+        </div>
+    </div>
+
+    <div class="grid-wrapper">
+        <div id="grid" class="grid">
+            <button class="add" onclick="addColumn()" title="Add Column"></button>
+            <button class="add row" onclick="addRow()" title="Add Row"></button>
+        </div>
+    </div>
+
+    <div class="btn-wrapper">
+        <button title="Reset Grid" onclick="reset()"><img src="reset.svg" alt></button>
+        <button title="Start Pathfinding Algorithm" onclick="play()"><img src="play.svg" alt></button>
+    </div>
+</body>
+
+</html>
