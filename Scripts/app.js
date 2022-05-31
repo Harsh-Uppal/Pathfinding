@@ -12,7 +12,7 @@ const cellColors = {
     path: '#6414FF',
     open: '#44AA44',
     closed: '#775599',
-    empty: '#00000000'
+    empty: ''
 }
 
 window.addEventListener('load', () => {
